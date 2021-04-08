@@ -4,26 +4,42 @@
 			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
             <link rel="stylesheet" href="static/css/style.css">			
 	     <link rel="wf_loading" href="static/css/wf_loading.css">
+<style>
+	     #loading {
+position: fixed;
+    left: 57%;
+    top: 43%;
+    z-index: 1;
+    margin: -75px 0 0 -75px;
+    border: 16px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width:120px;
+    height:120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
 
-	       <script type="text/javascript">
-isLoading = {
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+
+</style>
+<script>
+ isLoading = {
   start: function() {
-
-	 var ele='<img src="static/css/emotion/loading7.gif" style="vertical-align:middle; text-align: center; display:table; margin: auto; position:relative; justify-content:center; align-items:center;">';
-
-	  $("#wfLoadings").append(ele);
-
+  loading.style.display='block';
   },
   stop: function() {
-    var ele = document.getElementById('wfLoading');
-    if (ele) {
-            console.log("end");
-      ele.remove();
-    }
+  loading.style.display='none';
   }
 }
 
-        </script>
+</script>
 
 		</header>
 		
@@ -47,8 +63,7 @@ isLoading = {
 		
 			
 		<ul id="chat">
- <div id="wfLoadings"></div>
-
+			<div id="loading" style="display:none;"></div>
                         {%for value in msg%}
 			{%if loop.index%2==1%}
 			<li class="me">
@@ -73,16 +88,12 @@ isLoading = {
   
 		</ul>
 		<footer>
-		   <form action="/post" method="post">
+		   <form id="chatform" action="/post" method="post">
 
 			<input type="text" id="msg" name="msg" placeholder="Type your message">
-			<input type="submit" value="제출" id="wfLoading" />
+			<input type="submit" value="제출" id="submit_btn" onclick="isLoading.start();" />
+
 		</form>
 		</footer>
 	</main>
-<!--   <script>
-	 function  myfunction()
-{ document.getElementById(msg).reset();
-}
-</script>  -->
 </div>

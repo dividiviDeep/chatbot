@@ -40,7 +40,6 @@ def home():
         data=soc.recv(1024).decode(encoding='utf-8')
         print('Received: ',repr(data))
         arr.append(data) #list 에 답변 넣기
-        time.sleep(12)
         return render_template('test.html',msg=arr)
     soc.close() # 연결 종료
 
