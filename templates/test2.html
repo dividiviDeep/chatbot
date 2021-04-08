@@ -1,0 +1,88 @@
+<div id="container">
+	<aside>
+		<header>
+			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+            <link rel="stylesheet" href="static/css/style.css">			
+	     <link rel="wf_loading" href="static/css/wf_loading.css">
+
+	       <script type="text/javascript">
+isLoading = {
+  start: function() {
+
+	 var ele='<img src="static/css/emotion/loading7.gif" style="vertical-align:middle; text-align: center; display:table; margin: auto; position:relative; justify-content:center; align-items:center;">';
+
+	  $("#wfLoadings").append(ele);
+
+  },
+  stop: function() {
+    var ele = document.getElementById('wfLoading');
+    if (ele) {
+            console.log("end");
+      ele.remove();
+    }
+  }
+}
+
+        </script>
+
+		</header>
+		
+			<li>
+				<img src="static/css/emotion/logo.jpg" alt="" width="80px" height="80px">
+				<div>	  <h3> dividivideeplearning</h4>
+
+				</div>
+			</li>			
+		
+	</aside>
+	<main>
+		<header>
+			<img src="static/css/emotion/logo.jpg" alt="" width="60px" height="60px">
+			<div>
+				<h2>챗봇</h2> </div>		
+			
+		</header>
+
+
+		
+			
+		<ul id="chat">
+ <div id="wfLoadings"></div>
+
+                        {%for value in msg%}
+			{%if loop.index%2==1%}
+			<li class="me">
+                        <div class="entete">
+                        <h2>Me</h2>
+                        <span class="status blue"></span></div>
+                        <div class="triangle"></div>
+                        <div class="message">{{value}}<div></li>
+			{%endif%}
+			{%if loop.index%2==0%}
+                        <li class="you">
+                        <div class="entete">
+                        <h2>Chatbot</h2>
+                        <span class="status blue"></span></div>
+                        <div class="triangle"></div>
+			
+			<div class="message">{{value}}<div></li>
+			
+			{%endif%}
+
+                        {%endfor%}
+  
+		</ul>
+		<footer>
+		   <form action="/post" method="post">
+
+			<input type="text" id="msg" name="msg" placeholder="Type your message">
+			<input type="submit" value="제출" id="wfLoading" />
+		</form>
+		</footer>
+	</main>
+<!--   <script>
+	 function  myfunction()
+{ document.getElementById(msg).reset();
+}
+</script>  -->
+</div>
