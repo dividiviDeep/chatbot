@@ -65,15 +65,19 @@ position: fixed;
 		<ul id="chat">
 			<div id="loading" style="display:none;"></div>
                         {%for value in msg%}
-			{%if loop.index%2==1%}
+			{%if loop.index%3==1%}
 			<li class="me">
                         <div class="entete">
-                        <h2>Me</h2>
+			<img src="static/css/emotion/{{value}}.png" alt="" width="40px" height="40px">
+			{%endif%}
+			{%if loop.index%3==2%}
+			<h2>Me</h2>
                         <span class="status blue"></span></div>
                         <div class="triangle"></div>
                         <div class="message">{{value}}<div></li>
 			{%endif%}
-			{%if loop.index%2==0%}
+
+			{%if loop.index%3==0%}
                         <li class="you">
                         <div class="entete">
                         <h2>Chatbot</h2>
