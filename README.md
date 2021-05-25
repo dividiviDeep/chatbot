@@ -66,5 +66,9 @@
 - [시연 영상] https://drive.google.com/file/d/1kuppVDUxszylBvjo82p-11BVlAfUj743/view?usp=sharing 
 
 - [발표 영상] https://drive.google.com/file/d/1Vuq2B5zdn3ZyobG19naZX088aSy71bS9/view?usp=sharing
+
+### 📘 참고 Github 주소
+- [답변 생성 모델] https://github.com/nawnoes/WellnessConversation-LanguageModel
+- [감정 인식 모델]
 	 
 
