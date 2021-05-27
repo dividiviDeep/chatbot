@@ -60,6 +60,11 @@
 * [Html,Css,Javascript]
 * [Python]
 
+### 📘 사용 학습 데이터 셋
+- [Isear] https://www.unige.ch/cisa/research/materials-and-online-research/research-material/
+- [DailyDialog] http://yanran.li/dailydialog
+- [Chatbot] https://github.com/songys/Chatbot_data
+- [한국어 감정 정보가 포함된 단발성 대화 데이터셋] https://aihub.or.kr/keti_data_board/language_intelligence
 <br>
 
 ### 📕 실행 동영상 링크
