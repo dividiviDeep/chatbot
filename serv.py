@@ -11,8 +11,8 @@ arr=[] # 답변전달을 위한list
 
 
 
-host = "223.194.46.208" # Server IP
-port = 5010 # Port Number
+host = "127.0.0.1" # Server IP주소 입력
+port = 5010 # socket통신용 port 번호
 
 soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # TCP 소켓 생성
 soc.bind((host, port)) # host와 port로 소켓 연결
