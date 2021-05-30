@@ -58,11 +58,19 @@
 
 ***
 ### ✨ 실행 방법
-	1. server Ip 주소를 변경하고 serv.py파일을 실행시킨다.
-	2. client Ip 주소를 변경하고 cli.py파일을 실행시킨다.
-	3. url에 client Ip 주소:5000를 입력하면 웹 화면이 실행된다. 
-	- server측에 `감정 인식 모델`의 결과 checkpoint와 model이 있어야함
-	- client측에 `답변 생성 모델`의 결과 checkpoint와 model이 있어야함
+	> 각각 다른 두 대의 컴퓨터와 각각 모델 업로드 후 실행 
+		server: 답변 생성 모델, client: 감정인식 모델
+		
+	1. 각 root 상태에서 아래의 google dirve 링크의 모델을 각각 다운로드 (답변 생성 : dialogLM, 감정인식: emotion classification)
+	2. server Ip 주소를 변경하고 serv.py파일을 실행시킨다.
+	3. client Ip 주소를 변경하고 cli.py파일을 실행시킨다.
+	4. url에 client Ip 주소:5000를 입력하면 웹 화면이 실행된다. 
+	- server측에 `답변 생성 모델`의 결과 checkpoint와 model이 있어야함
+	- client측에 `감정 인식 모델`의 결과 checkpoint와 model이 있어야함
+	
+### ✨ 모델 저장
+[답변 생성 모델](https://drive.google.com/drive/folders/15BuAXZVIs4A9DJVKos4Sd7WWUQyBOj7d?usp=sharing)
+[감정 인식 모델](https://drive.google.com/drive/folders/1H-9Qux1-0HFoWaChidwGF_BQsZBewj8H?usp=sharing)
 
 
 ### 📙 사용된 라이브러리 및 언어
@@ -82,13 +90,15 @@
 ### 📕 실행 동영상 링크
 - [시연 영상](https://drive.google.com/file/d/1kuppVDUxszylBvjo82p-11BVlAfUj743/view?usp=sharing) 
 
-- [발표 영상](https://drive.google.com/file/d/1Vuq2B5zdn3ZyobG19naZX088aSy71bS9/view?usp=sharing)
+- [발표 영상](https://youtu.be/AUqwAqHP-pk)
 
 <br>
 
 ### 📘 참고 Github 주소
 - [답변 생성 모델](https://github.com/nawnoes/WellnessConversation-LanguageModel)
 - [감정 인식 모델](https://github.com/SKTBrain/KoBERT)
+
+
 
 ### 📙 개발 기간
 2020/08 ~ 2021/05
