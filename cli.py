@@ -149,4 +149,4 @@ class BERTClassifier(nn.Module):
 
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000) #서버 아이피와 포트 
+    app.run(host='127.0.0.1', port=5000) #웹출력용 ip와 port로 변경
