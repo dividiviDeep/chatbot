@@ -45,8 +45,8 @@ def hello():
 
 soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-host = "223.194.46.208" # 서버 아이피
-port = 5010 # 서버 포트
+host = "127.0.0.1" # 서버 아이피로 변경
+port = 5010 # 소켓용 서버 
 
 soc.connect( (host, port) ) # 서버측으로 연결한다.
 #print (soc.recv(1024)) # 서버측에서 보낸 데이터 1024 버퍼만큼 받는다.
@@ -149,4 +149,4 @@ class BERTClassifier(nn.Module):
 
 
 if __name__ == '__main__':
-    app.run(host='223.194.46.100', port=5000)
+    app.run(host='127.0.0.1', port=5000) #서버 아이피와 포트 
