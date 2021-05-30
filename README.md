@@ -89,5 +89,8 @@
 ### 📘 참고 Github 주소
 - [답변 생성 모델](https://github.com/nawnoes/WellnessConversation-LanguageModel)
 - [감정 인식 모델](https://github.com/SKTBrain/KoBERT)
+
+### 📙 개발 기간
+2020/08 ~ 2021/05
 	 
 
