@@ -57,6 +57,13 @@
 
 
 ***
+### ✨ 실행 방법
+	1. server Ip 주소를 변경하고 serv.py파일을 실행시킨다.
+	2. client Ip 주소를 변경하고 cli.py파일을 실행시킨다.
+	3. url에 client Ip 주소:5000를 입력하면 웹 화면이 실행된다. 
+	- server측에 `감정 인식 모델`의 결과 checkpoint와 model이 있어야함
+	- client측에 `답변 생성 모델`의 결과 checkpoint와 model이 있어야함
+
 
 ### 📙 사용된 라이브러리 및 언어
 
@@ -66,19 +73,21 @@
 * [Python]
 
 ### 📘 사용 학습 데이터 셋
-- [Isear] https://www.unige.ch/cisa/research/materials-and-online-research/research-material/
-- [DailyDialog] http://yanran.li/dailydialog
-- [Chatbot] https://github.com/songys/Chatbot_data
-- [한국어 감정 정보가 포함된 단발성 대화 데이터셋] https://aihub.or.kr/keti_data_board/language_intelligence
+- [Isear](https://www.unige.ch/cisa/research/materials-and-online-research/research-material/)
+- [DailyDialog](http://yanran.li/dailydialog)
+- [Chatbot](https://github.com/songys/Chatbot_data)
+- [한국어 감정 정보가 포함된 단발성 대화 데이터셋](https://aihub.or.kr/keti_data_board/language_intelligence)
 <br>
 
 ### 📕 실행 동영상 링크
-- [시연 영상] https://drive.google.com/file/d/1kuppVDUxszylBvjo82p-11BVlAfUj743/view?usp=sharing 
+- [시연 영상](https://drive.google.com/file/d/1kuppVDUxszylBvjo82p-11BVlAfUj743/view?usp=sharing) 
 
-- [발표 영상] https://drive.google.com/file/d/1Vuq2B5zdn3ZyobG19naZX088aSy71bS9/view?usp=sharing
+- [발표 영상](https://drive.google.com/file/d/1Vuq2B5zdn3ZyobG19naZX088aSy71bS9/view?usp=sharing)
+
+<br>
 
 ### 📘 참고 Github 주소
-- [답변 생성 모델] https://github.com/nawnoes/WellnessConversation-LanguageModel
-- [감정 인식 모델] https://github.com/SKTBrain/KoBERT
+- [답변 생성 모델](https://github.com/nawnoes/WellnessConversation-LanguageModel)
+- [감정 인식 모델](https://github.com/SKTBrain/KoBERT)
 	 
 
