@@ -96,7 +96,7 @@
 <br>
 
 ### :black_nib: 실행 동영상 링크
-- [시연 영상] (https://youtu.be/XVvSC1yAOww)
+- [시연 영상](https://youtu.be/XVvSC1yAOww)
 
 - [발표 영상](https://youtu.be/AUqwAqHP-pk)
 
